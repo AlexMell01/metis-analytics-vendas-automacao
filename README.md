@@ -1,66 +1,65 @@
-📊 Metis Analytics – Pipeline de Vendas Automatizado
-Este projeto representa um pipeline completo de automação para dados de vendas. Ele realiza coleta de arquivos, tratamento (ETL), análise, geração de relatórios em PDF com visual profissional, e envio automático por e-mail. Tudo isso com interface gráfica (GUI) e executável .exe.
+# 📊 Metis Analytics – Pipeline Automatizado de Vendas
 
-🚀 Funcionalidades
-✅ Coleta automática de arquivos .csv ou .xlsx
-✅ Transformação e limpeza de dados
-✅ Armazenamento em banco SQLite
-✅ Geração de gráficos (barras e linha)
-✅ Relatório em PDF com logo Metis
-✅ Envio automático por e-mail com anexo
-✅ Interface gráfica amigável (GUI)
-✅ Versão .exe para execução com dois cliques
+Este projeto executa uma automação completa de dados de vendas. Ele coleta arquivos, trata e transforma os dados (ETL), armazena no banco, gera gráficos e relatórios PDF visuais e envia tudo automaticamente por e-mail — com interface gráfica ou via `.exe`.
 
-🛠 Tecnologias usadas
-Python 3.13
+---
 
-Pandas
+## 🔍 Visão Geral
 
-Matplotlib
+- Processamento de arquivos `.csv` e `.xlsx` de vendas com estrutura variada.
+- Transformação automatizada para gerar colunas padrão e consolidação no banco.
+- Geração automática de gráficos e relatório PDF com marca visual.
+- Envio do PDF final por e-mail e interface gráfica com execução automática.
 
-ReportLab
+---
 
-SQLite
+## 📊 Análises Realizadas
 
-Tkinter (GUI)
+- Receita total por canal de venda
+- Produtos mais vendidos por quantidade
+- Receita mensal consolidada (timeline)
+- Gráficos de barra e linha gerados via matplotlib
+- PDF estruturado com logotipo e rodapé profissional
 
-PyInstaller
+---
 
-Schedule
+## 🧱 Estrutura do Projeto
 
-SMTP (e-mail automático)
-
-📁 Estrutura do Projeto
+```
 projeto_etl_vendas/
-├── app_gui.py # Interface visual
-├── etl.py # Coleta e transformação de dados
-├── load_db.py # Carga no banco SQLite
-├── gerar_relatorio.py # Gráficos e PDF
-├── enviar_email.py # Envio automático por e-mail
-├── entrada/ # Arquivos de entrada (.csv/.xlsx)
-├── data/ # Saídas: .db, .csv, .pdf
-└── dist/metis_gui.exe # Versão empacotada (opcional)
+├── app_gui.py            # Interface visual
+├── etl.py                # Coleta e transformação dos dados
+├── load_db.py            # Inserção no banco SQLite
+├── gerar_relatorio.py    # Geração de gráficos e PDF
+├── enviar_email.py       # Envio automático do PDF por e-mail
+├── entrada/              # Pasta onde os arquivos originais são colocados
+├── data/                 # Arquivos gerados (.csv, .db, .pdf)
+└── dist/metis_gui.exe    # Versão empacotada com interface
+```
 
-📷 Demonstrações (adicione depois)
-Exemplo do PDF: ./data/relatorio_vendas.pdf
-Interface GUI: ./screenshots/gui_metis.png
+---
 
-▶️ Como executar
-Clone o repositório:
-git clone https://github.com/AlexMell01/metis-analytics-vendas-automacao.git
+## ▶️ Como Executar
 
-Instale as dependências:
-pip install -r requirements.txt
+1. Clone o repositório:  
+`git clone https://github.com/AlexMell01/metis-analytics-vendas-automacao.git`
 
-Execute o app:
-python app_gui.py
+2. Instale as dependências:  
+`pip install -r requirements.txt`
 
-Ou use o executável:
-dist/metis_gui.exe
+3. Rode com interface:
+`python app_gui.py`  
+ou execute `dist/metis_gui.exe`
 
-📩 Contato
-Desenvolvido por Alex Costa
-LinkedIn: https://linkedin.com/in/alexmell01
+---
 
-🏷️ Licença
+## 📩 Contato
+
+Desenvolvido por **Alex Costa**  
+🔗 LinkedIn: [linkedin.com/in/alexmell01](https://linkedin.com/in/alexmell01)
+
+---
+
+## 🏷️ Licença
+
 MIT © 2025 – Metis Analytics
